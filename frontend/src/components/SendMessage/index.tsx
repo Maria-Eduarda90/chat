@@ -1,5 +1,4 @@
 import { FormEvent, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { sendMessage } from '../../services/resources/message';
 import ImgEnviar from '../../assets/enviar.png';
 import { Message } from '../Message';
@@ -7,7 +6,6 @@ import * as C from './styles';
 
 export const SendMessage = () => {
     const [ message, setMessage ] = useState('');
-    const navigate = useNavigate();
 
     const handleSendMessage = async (event: FormEvent) => {
         event.preventDefault();
