@@ -29,7 +29,6 @@ export const AuthProvider: React.FC = ({ children }) => {
 
         return {} as UserProps;
     });
-    console.log('user: ', user);
 
     const userSignIn = async (userData: SignInProps) => {
         localStorage.clear();
