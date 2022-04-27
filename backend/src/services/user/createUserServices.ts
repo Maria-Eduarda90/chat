@@ -60,10 +60,9 @@ class CreateUserServices {
         messages: true,
       },
     });
-    console.log(existUser);
 
     if (!existUser) {
-      throw new Error(`${existUser}: teste`);
+      throw new Error('Usuario não encontrado');
     }
 
     const token = sign(
