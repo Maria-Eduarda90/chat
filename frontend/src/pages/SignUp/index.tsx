@@ -7,7 +7,6 @@ import { Modal } from '../../components/Modal';
 import { useAuth } from '../../hooks/useAuth';
 import * as C from './styles';
 
-// cadastrar
 export const SignUp = () => {
     const [ name, setName ] = useState('');
     const [ email, setEmail ] = useState('');
