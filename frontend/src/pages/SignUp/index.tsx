@@ -35,7 +35,7 @@ export const SignUp = () => {
             password: password,
         }
         if (data.password !== confirmPassword){
-            return alert('email não compatives');
+            return alert('Senhas não correspondem');
         }
         
         try {
