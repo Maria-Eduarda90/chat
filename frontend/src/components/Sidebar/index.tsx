@@ -44,9 +44,6 @@ export const Sidebar = () => {
                                 <p>{user[0]?.name}</p>
                                 <span>{user[0]?.email}</span>
                             </div>
-                            <button>
-                                Deletar Conta
-                            </button>
                         </div>
                     </nav>
                 </C.ContainerSidebar>
