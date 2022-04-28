@@ -22,7 +22,3 @@ export const profile =  () => {
 export const signUp =  (data: SignUpProps) => {
     return api.post('/signup', data);
 }
-
-export const deleteUser =  (id: string) => {
-    return api.delete(`/profile/${id}`);
-}

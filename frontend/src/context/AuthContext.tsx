@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState, useCallback} from 'react';
-import { signIn, signUp, SignInProps, SignUpProps, profile, deleteUser } from '../services/resources/user';
+import { signIn, signUp, SignInProps, SignUpProps, profile } from '../services/resources/user';
 
 type UserProps = {
     id: string;
