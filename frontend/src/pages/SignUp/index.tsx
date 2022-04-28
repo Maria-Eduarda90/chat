@@ -10,7 +10,8 @@ import * as C from './styles';
 export const SignUp = () => {
     const [ name, setName ] = useState('');
     const [ email, setEmail ] = useState('');
-    const [ password, setPassword ] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
 
     const navigate = useNavigate();
     const { userSignUp } = useAuth();
@@ -24,12 +25,17 @@ export const SignUp = () => {
             return alert('preencha o campo email');
         } else if (password.trim() === ''){
             return alert('preencha o campo senha');
+        } else if (confirmPassword.trim() === ''){
+            return alert('preencha o campo confirmar senha');
         }
 
         const data = {
             name: name,
             email: email,
             password: password,
+        }
+        if (data.password !== confirmPassword){
+            return alert('email não compatives');
         }
         
         try {
@@ -56,7 +62,7 @@ export const SignUp = () => {
                     <Input type='password' value={password} onChange={e => setPassword(e.target.value)}/>
 
                     <label>Confirmar Senha: </label>
-                    <Input type='password' />
+                    <Input type='password' value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)}/>
 
                     <Button>
                         Criar Conta
