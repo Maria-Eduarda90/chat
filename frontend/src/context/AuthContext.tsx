@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState, useCallback} from 'react';
+import { createContext, useState} from 'react';
 import { signIn, signUp, SignInProps, SignUpProps, profile } from '../services/resources/user';
 
 type UserProps = {
