@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import { CreateMessageController } from '../controllers/mensagens/createMessageController.ts';
 import { GetMessagesController } from '../controllers/mensagens/getMessagesController';
-import { DeleteUserController } from '../controllers/user/deleteUserController';
 import { GetProfileUserController } from '../controllers/user/getProfileUserController';
 import { CreateUserController } from '../controllers/user/userController';
 import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
