@@ -4,10 +4,6 @@ import { SignUp } from '../pages/SignUp';
 import { Chat } from '../pages/Chat';
 import { NotFound } from '../pages/NotFound';
 
-const PrivateRoute = ({ }) => {
-    <Route/>
-}
-
 export function Rotas(){
     return(
         <Router>
