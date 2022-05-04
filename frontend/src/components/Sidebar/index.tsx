@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
-import { VscSignOut } from 'react-icons/vsc';
 
 import * as AiIcons from 'react-icons/ai';
 
 import * as C from './styles';
 import { useState } from 'react';
 import { Avatar } from '../Avatar';
+import { ButtonSignOut } from '../ButtonSignOut';
 
 export const Sidebar = () => {
     const [ sidebar, setSidebar ] = useState(false);
 
-    const { user, userSignOut } = useAuth();
+    const { user } = useAuth();
 
     function showSidebar() {
         setSidebar(!sidebar);
@@ -34,9 +34,7 @@ export const Sidebar = () => {
                             <Link to='#' className="menu-bars close">
                                 <AiIcons.AiOutlineClose onClick={showSidebar}/>
                             </Link>
-                            <button onClick={userSignOut} className="signOutButton">
-                                <VscSignOut size="32" />
-                            </button>
+                            <ButtonSignOut />
                         </ul>
                         <div className="space">
                             <div>

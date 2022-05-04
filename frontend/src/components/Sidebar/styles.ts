@@ -90,15 +90,6 @@ export const ContainerSidebar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .signOutButton {
-      background: transparent;
-      border-radius: 4px;
-      border: 0;
-      
-      color: #c4c4cc;
-      cursor: pointer;
-    }
   }
 
   .nav-menu.active {
