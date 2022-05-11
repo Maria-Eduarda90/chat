@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { CreateMessageController } from '../controllers/mensagens/createMessageController.ts';
-import { GetMessagesController } from '../controllers/mensagens/getMessagesController';
-import { GetProfileUserController } from '../controllers/user/getProfileUserController';
-import { CreateUserController } from '../controllers/user/userController';
+import { CreateMessageController } from '../controllers/messageController/createMessageController.ts';
+import { GetMessagesController } from '../controllers/messageController/getMessagesController';
+import { GetProfileUserController } from '../controllers/userController/getProfileUserController';
+import { CreateUserController } from '../controllers/userController/createUserController';
 import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
 
 const router = Router();
