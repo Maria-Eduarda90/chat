@@ -19,26 +19,27 @@ export const SignUp = () => {
     const handleToSignUp = async (e: FormEvent) => {
         e.preventDefault();
 
-        if(name.trim() === ''){
+        if(name === ''){
             return alert('preencha o campo name');
-        } else if (email.trim() === '') {
+        } else if (email === '') {
             return alert('preencha o campo email');
-        } else if (password.trim() === ''){
+        } else if (password === ''){
             return alert('preencha o campo senha');
-        } else if (confirmPassword.trim() === ''){
+        } else if (confirmPassword === ''){
             return alert('preencha o campo confirmar senha');
         }
 
-        const data = {
-            name: name,
-            email: email,
-            password: password,
-        }
-        if (data.password !== confirmPassword){
+        if (password !== confirmPassword) {
             return alert('Senhas não correspondem');
         }
-        
+  
         try {
+            const data = {
+                name: name,
+                email: email,
+                password: password,
+            }
+
             const response = await userSignUp(data)
             if(response){
                 navigate('/chat')

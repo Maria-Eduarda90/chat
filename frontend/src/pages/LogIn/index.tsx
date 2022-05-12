@@ -1,4 +1,4 @@
-import { useEffect, useState, FormEvent } from 'react';
+import { useState, FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { Button } from "../../components/Button";
@@ -17,12 +17,12 @@ export const LogIn = () => {
 
     const handleToSignIn = async (e: FormEvent) => {
         e.preventDefault();
-        const data = {
-            email,
-            password
-        }
         
         try{
+            const data = {
+                email,
+                password
+            }
             const response = await userSignIn(data);
 
             if (response.id) {
