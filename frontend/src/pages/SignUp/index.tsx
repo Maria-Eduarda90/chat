@@ -45,7 +45,7 @@ export const SignUp = () => {
                 navigate('/chat')
             }
         } catch(err){
-            console.log("Analysis error: ", err)
+            alert('Já existe um usuário cadastrado com esse email');
         }
     }
 
