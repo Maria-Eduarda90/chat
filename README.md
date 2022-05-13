@@ -59,8 +59,8 @@ $ yarn dev
 </h1>
 
 <h1 align="center">
-  <img alt="chat" title="#chat" src="./frontend/src/assets/20220501_191916.gif" />
+  <img alt="chat" title="#chat" src="./frontend/src/assets/20220512_200903.gif" />
 </h1>
 <h1 align="center">
-  <img alt="chat" title="#chat" src="./frontend/src/assets/20220501_193147.gif" />
+  <img alt="chat" title="#chat" src="./frontend/src/assets/20220512_201702.gif" />
 </h1>
