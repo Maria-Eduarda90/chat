@@ -26,7 +26,7 @@ export const Container = styled.div`
       background: #cccccc;
       padding: 10px;
       position: relative;
-      width: 50%;
+      width: 60%;
       border-radius: 8px;
 
       span {
