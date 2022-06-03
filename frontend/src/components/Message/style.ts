@@ -20,13 +20,30 @@ export const Container = styled.div`
         font-size: 12px;
       }
     }
+    }
 
     .messageUser {
+      background: #cccccc;
+      padding: 10px;
+      position: relative;
+      width: 50%;
+      border-radius: 8px;
+
       span {
-        color: white;
+        word-break: break-word;
         font-family: "Poppins", sans-serif;
         font-size: 18px;
       }
     }
+    .messageUser:before { 
+      content:''; 
+      position: 
+      absolute; 
+      width:15px; 
+      height:15px; 
+      left:-7px; 
+      top:15px; 
+      background:#cccccc; 
+      -webkit-transform:rotate(45deg);
   }
 `;

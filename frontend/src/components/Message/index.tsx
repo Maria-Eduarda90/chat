@@ -40,7 +40,7 @@ export const Message = () => {
                         <li key={message.id} className="message">
                             <p>{message.user.name}</p>
                             <div className="messageUser">
-                                <span> - {message.text}</span>
+                                <span>{message.text}</span>
                             </div>
                         </li>
                     );
