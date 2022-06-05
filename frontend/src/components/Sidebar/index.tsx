@@ -39,6 +39,7 @@ export const Sidebar = () => {
                         <div className="space">
                             <div>
                                 <Avatar imageUri='https://github.com/Maria-Eduarda90.png' />
+                                <p></p>
                                 <p>{user[0]?.name}</p>
                                 <span>{user[0]?.email}</span>
                             </div>

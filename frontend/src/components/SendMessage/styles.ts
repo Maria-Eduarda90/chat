@@ -17,6 +17,20 @@ export const Container = styled.div`
     height: 550px;
     overflow-y: scroll;
   }
+
+  .historico_menssagens::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .historico_menssagens::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .historico_menssagens::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 20px;
+    border: 1px solid rgb(29, 26, 26);
+  }
 `;
 
 export const Form = styled.form`
