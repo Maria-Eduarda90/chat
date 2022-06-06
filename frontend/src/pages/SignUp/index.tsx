@@ -44,10 +44,12 @@ export const SignUp = () => {
                 password: password,
             }
 
-            const response = await userSignUp(data)
+            const response = await userSignUp(data);
+
             if(response){
-                navigate('/chat')
+                navigate('/chat');
             }
+
         } catch(err){
             alert('Já existe um usuário cadastrado com esse email');
         }
