@@ -33,6 +33,7 @@ export const LogIn = () => {
         }catch(err){
             alert("senha ou email invalido");
         }
+
     }
 
     return(
