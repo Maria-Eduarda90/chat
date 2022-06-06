@@ -55,12 +55,12 @@ $ yarn dev
 </br>
 
 <h1 align="center"> 
-	Projeto 
+<!-- 	Projeto  -->
 </h1>
 
 <h1 align="center">
-  <img alt="chat" title="#chat" src="./frontend/src/assets/20220512_200903.gif" />
+<!--   <img alt="chat" title="#chat" src="./frontend/src/assets/20220512_200903.gif" /> -->
 </h1>
 <h1 align="center">
-  <img alt="chat" title="#chat" src="./frontend/src/assets/20220512_201702.gif" />
+<!--   <img alt="chat" title="#chat" src="./frontend/src/assets/20220512_201702.gif" /> -->
 </h1>
