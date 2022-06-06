@@ -32,6 +32,10 @@ export const SignUp = () => {
         if (password !== confirmPassword) {
             return alert('Senhas não correspondem');
         }
+
+        if (password.length < 5){
+            return alert('a senha precisa conter pelo menos 5 caracteres');
+        }
   
         try {
             const data = {
@@ -53,7 +57,7 @@ export const SignUp = () => {
         <C.Container>
             <Modal>
                 <C.Form onSubmit={handleToSignUp}>
-                    <label>Name/Apelido: </label>
+                    <label>Nome:</label>
                     <Input type='text' value={name} onChange={e => setName(e.target.value)}/>
 
                     <label>Email: </label>

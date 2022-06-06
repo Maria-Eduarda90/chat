@@ -31,9 +31,9 @@ export const LogIn = () => {
             }
             
         }catch(err){
-            console.log("Analysis error: ", err)
+            alert("senha ou email invalido");
         }
-        alert("senha ou email invalido");
+        
     }
 
     return(
