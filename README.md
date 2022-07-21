@@ -20,6 +20,7 @@
 - Sqlite
 - Axios
 - Socket.io
+- jwt
 
 </br>
 
