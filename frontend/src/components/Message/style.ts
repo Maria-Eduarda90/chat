@@ -12,7 +12,7 @@ export const Container = styled.div`
     flex: 1;
 
     .message {
-      max-width: 440px;
+      /* max-width: 440px; */
 
       > p {
         color: white;
