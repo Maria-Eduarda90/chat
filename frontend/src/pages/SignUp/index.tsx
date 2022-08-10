@@ -19,14 +19,18 @@ export const SignUp = () => {
     const handleToSignUp = async (e: FormEvent) => {
         e.preventDefault();
 
-        if(name === ''){
-            return alert('preencha o campo name');
-        } else if (email === '') {
-            return alert('preencha o campo email');
-        } else if (password === ''){
-            return alert('preencha o campo senha');
-        } else if (confirmPassword === ''){
-            return alert('preencha o campo confirmar senha');
+        if(name === '' || name === null){
+            alert('preencha o campo name');
+            return;
+        } else if (email === '' || email === null) {
+            alert('preencha o campo email');
+            return;
+        } else if (password === '' || password === null){
+            alert('preencha o campo senha');
+            return;
+        } else if (confirmPassword === '' || confirmPassword === null){
+            alert('preencha o campo confirmar senha');
+            return;
         }
 
         if (password !== confirmPassword) {

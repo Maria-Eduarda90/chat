@@ -38,7 +38,7 @@ export const Message = () => {
                 {message.map(message => {
                     return(
                         <li key={message.id} className="message">
-                            <p>{message.user.name}</p>
+                            <p>{message.user.name}:</p>
                             <div className="messageUser">
                                 <span>{message.text}</span>
                             </div>

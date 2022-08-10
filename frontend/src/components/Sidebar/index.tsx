@@ -9,7 +9,7 @@ import { Avatar } from '../Avatar';
 import { ButtonSignOut } from '../ButtonSignOut';
 
 export const Sidebar = () => {
-    const [ sidebar, setSidebar ] = useState(false);
+    const [ sidebar, setSidebar ] = useState(true);
 
     const { user } = useAuth();
 

@@ -23,27 +23,12 @@ export const Container = styled.div`
     }
 
     .messageUser {
-      background: #cccccc;
-      padding: 10px;
-      position: relative;
-      width: 60%;
-      border-radius: 8px;
-
+      color: #CCC;
+      
       span {
         word-break: break-word;
         font-family: "Poppins", sans-serif;
         font-size: 18px;
       }
     }
-    .messageUser:before { 
-      content:''; 
-      position: 
-      absolute; 
-      width:15px; 
-      height:15px; 
-      left:-7px; 
-      top:15px; 
-      background:#cccccc; 
-      -webkit-transform:rotate(45deg);
-  }
 `;
