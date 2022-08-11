@@ -1,5 +1,5 @@
 <h1 align="center">
-  Chat
+  <img width="120px" alt="logo" title="#logo" src="./frontend/src/assets/chat.png" />
 </h1>
 
 <p align="center">
