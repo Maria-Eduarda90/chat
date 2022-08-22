@@ -21,6 +21,7 @@
 - Axios
 - Socket.io
 - jwt
+- Private Routes
 
 </br>
 
